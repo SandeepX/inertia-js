@@ -1,14 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
-use Inertia\Inertia;
+Route::get('/', [PageController::class, 'home']);
+Route::get('/about', [PageController::class, 'about']);
+//Route::get('about/create', [PageController::class, 'create']);
+//Route::post('/about/store', [PageController::class, 'storeAboutPageData']);
 
-
-Route::get('/', static function () {
-    return Inertia::render('Home');
-});
-
-Route::get('/about', static function () {
-    return Inertia::render('About');
-});

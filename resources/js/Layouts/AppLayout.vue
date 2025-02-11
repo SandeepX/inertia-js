@@ -1,11 +1,6 @@
 <template>
     <div>
-        <nav>
-            <ul>
-                <li><inertia-link href="/">Home</inertia-link></li>
-                <li><inertia-link href="/about">About</inertia-link></li>
-            </ul>
-        </nav>
+        <Nav />
         <main>
             <slot />
         </main>
@@ -13,5 +8,5 @@
 </template>
 
 <script setup>
-import { Link as InertiaLink } from '@inertiajs/vue3';
+import Nav from "./Nav.vue";
 </script>

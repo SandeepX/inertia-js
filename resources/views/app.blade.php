@@ -6,7 +6,8 @@
     <title>Laravel Inertia SPA</title>
     @vite('resources/js/app.js')
 </head>
+
 <body>
-@inertia
+    @inertia
 </body>
 </html>
